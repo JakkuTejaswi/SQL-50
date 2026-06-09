@@ -29,9 +29,8 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 
 * INNER JOIN
 * LEFT JOIN
-* RIGHT JOIN
-* CROSS JOIN
 * SELF JOIN
+* Multi-Table Joins
 
 ### Aggregations
 
@@ -49,8 +48,8 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 * Common Table Expressions (CTEs)
 * Date Functions
 * String Functions
-* Percentage & Ratio Calculations
 * Conditional Aggregation
+* Percentage & Ratio Calculations
 
 ### Advanced Topics (In Progress)
 
@@ -67,11 +66,11 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 
 | Difficulty | Solved |
 | ---------- | ------ |
-| Easy       | 21     |
-| Medium     | 8      |
+| Easy       | 26     |
+| Medium     | 10     |
 | Hard       | 0      |
 
-**Total SQL Problems Solved: 29**
+**Total SQL Problems Solved: 36**
 
 **Current Track:** LeetCode SQL 50
 
@@ -87,8 +86,10 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 | 1075 | Project Employees I                                    | Easy       |
 | 1141 | User Activity for the Past 30 Days I                   | Easy       |
 | 1148 | Article Views I                                        | Easy       |
+| 1164 | Product Price at a Given Date                          | Medium     |
 | 1174 | Immediate Food Delivery II                             | Medium     |
 | 1193 | Monthly Transactions I                                 | Medium     |
+| 1204 | Last Person to Fit in the Bus                          | Medium     |
 | 1211 | Queries Quality and Percentage                         | Medium     |
 | 1251 | Average Selling Price                                  | Easy       |
 | 1280 | Students and Examinations                              | Easy       |
@@ -98,7 +99,11 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 | 1661 | Average Time of Process per Machine                    | Easy       |
 | 1683 | Invalid Tweets                                         | Easy       |
 | 1729 | Find Followers Count                                   | Easy       |
+| 1731 | The Number of Employees Which Report to Each Employee  | Easy       |
 | 1757 | Recyclable and Low Fat Products                        | Easy       |
+| 1789 | Primary Department for Each Employee                   | Easy       |
+| 180  | Consecutive Numbers                                    | Medium     |
+| 1907 | Count Salary Categories                                | Medium     |
 | 1934 | Confirmation Rate                                      | Medium     |
 | 197  | Rising Temperature                                     | Easy       |
 | 2356 | Number of Unique Subjects Taught by Each Teacher       | Easy       |
@@ -108,6 +113,7 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 | 584  | Find Customer Referee                                  | Easy       |
 | 596  | Classes With at Least 5 Students                       | Easy       |
 | 598  | Big Countries                                          | Easy       |
+| 610  | Triangle Judgement                                     | Easy       |
 | 619  | Biggest Single Number                                  | Easy       |
 | 620  | Not Boring Movies                                      | Easy       |
 
@@ -122,6 +128,7 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 * Invalid Tweets
 * Biggest Single Number
 * Not Boring Movies
+* Triangle Judgement
 
 ### Joins
 
@@ -130,6 +137,7 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 * Employee Bonus
 * Students and Examinations
 * Average Selling Price
+* Replace Employee ID With The Unique Identifier
 
 ### Aggregation & Grouping
 
@@ -138,12 +146,14 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 * Monthly Transactions I
 * Percentage of Users Attended a Contest
 * Find Followers Count
+* Count Salary Categories
 
 ### Date Functions
 
 * Rising Temperature
 * User Activity for the Past 30 Days I
 * Monthly Transactions I
+* Product Price at a Given Date
 
 ### Intermediate SQL
 
@@ -151,6 +161,8 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 * Immediate Food Delivery II
 * Customers Who Bought All Products
 * Product Sales Analysis III
+* Last Person to Fit in the Bus
+* Consecutive Numbers
 
 ---
 
@@ -165,8 +177,10 @@ SQL-50/
 ├── 1075 Project Employees I.sql
 ├── 1141 User Activity for the Past 30 Days I.sql
 ├── 1148 Article Views I.sql
+├── 1164 Product Price at a Given Date.sql
 ├── 1174 Immediate Food Delivery II.sql
 ├── 1193 Monthly Transactions I.sql
+├── 1204 Last Person to Fit in the Bus.sql
 ├── 1211 Queries Quality and Percentage.sql
 ├── 1251 Average Selling Price.sql
 ├── 1280 Students and Examinations.sql
@@ -176,7 +190,11 @@ SQL-50/
 ├── 1661 Average Time of Process per Machine.sql
 ├── 1683 Invalid Tweets.sql
 ├── 1729 Find Followers Count.sql
+├── 1731 The Number of Employees Which Report to Each Employee.sql
 ├── 1757 Recyclable and Low Fat Products.sql
+├── 1789 Primary Department for Each Employee.sql
+├── 180 Consecutive Numbers.sql
+├── 1907 Count Salary Categories.sql
 ├── 1934 Confirmation Rate.sql
 ├── 197 Rising Temperature.sql
 ├── 2356 Number of Unique Subjects Taught by Each Teacher.sql
@@ -186,6 +204,7 @@ SQL-50/
 ├── 584 Find Customer Referee.sql
 ├── 596 Classes With at Least 5 Students.sql
 ├── 598 Big Countries.sql
+├── 610 Triangle Judgement.sql
 ├── 619 Biggest Single Number.sql
 ├── 620 Not Boring Movies.sql
 └── README.md
@@ -204,7 +223,9 @@ SQL-50/
 ### Next Topics
 
 * Window Functions
-* ROW_NUMBER(), RANK(), DENSE_RANK()
+* ROW_NUMBER()
+* RANK()
+* DENSE_RANK()
 * LEAD() and LAG()
 * Advanced CTEs
 * Recursive Queries
