@@ -4,6 +4,8 @@ Welcome to my SQL LeetCode Solutions repository! 🚀
 
 This repository contains my solutions to SQL problems from LeetCode. The goal is to strengthen SQL fundamentals, improve query-writing skills, and prepare for Data Analyst, Data Science, Machine Learning, and Software Engineering interviews.
 
+---
+
 ## Objectives
 
 * Master SQL fundamentals and advanced querying techniques.
@@ -51,14 +53,15 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 * Conditional Aggregation
 * Percentage & Ratio Calculations
 
-### Advanced Topics (In Progress)
+### Advanced SQL
 
 * Window Functions
-* Ranking Functions
+* ROW_NUMBER()
+* RANK()
+* DENSE_RANK()
+* LEAD() and LAG()
 * Recursive CTEs
 * Query Optimization
-* Stored Procedures
-* Views
 
 ---
 
@@ -67,10 +70,10 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 | Difficulty | Solved |
 | ---------- | ------ |
 | Easy       | 26     |
-| Medium     | 10     |
-| Hard       | 0      |
+| Medium     | 13     |
+| Hard       | 1      |
 
-**Total SQL Problems Solved: 36**
+**Total SQL Problems Solved: 40**
 
 **Current Track:** LeetCode SQL 50
 
@@ -93,6 +96,8 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 | 1211 | Queries Quality and Percentage                         | Medium     |
 | 1251 | Average Selling Price                                  | Easy       |
 | 1280 | Students and Examinations                              | Easy       |
+| 1321 | Restaurant Growth                                      | Medium     |
+| 1341 | Movie Rating                                           | Medium     |
 | 1378 | Replace Employee ID With The Unique Identifier         | Easy       |
 | 1581 | Customer Who Visited but Did Not Make Any Transactions | Easy       |
 | 1633 | Percentage of Users Attended a Contest                 | Medium     |
@@ -103,19 +108,24 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 | 1757 | Recyclable and Low Fat Products                        | Easy       |
 | 1789 | Primary Department for Each Employee                   | Easy       |
 | 180  | Consecutive Numbers                                    | Medium     |
+| 185  | Department Top Three Salaries                          | Hard       |
 | 1907 | Count Salary Categories                                | Medium     |
 | 1934 | Confirmation Rate                                      | Medium     |
 | 197  | Rising Temperature                                     | Easy       |
+| 1978 | Employees Whose Manager Left the Company               | Easy       |
 | 2356 | Number of Unique Subjects Taught by Each Teacher       | Easy       |
 | 550  | Game Play Analysis IV                                  | Medium     |
 | 570  | Managers with at Least 5 Direct Reports                | Medium     |
 | 577  | Employee Bonus                                         | Easy       |
 | 584  | Find Customer Referee                                  | Easy       |
+| 585  | Investments in 2016                                    | Medium     |
 | 596  | Classes With at Least 5 Students                       | Easy       |
 | 598  | Big Countries                                          | Easy       |
+| 602  | Friend Requests II: Who Has the Most Friends           | Medium     |
 | 610  | Triangle Judgement                                     | Easy       |
 | 619  | Biggest Single Number                                  | Easy       |
 | 620  | Not Boring Movies                                      | Easy       |
+| 626  | Exchange Seats                                         | Medium     |
 
 ---
 
@@ -155,6 +165,12 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 * Monthly Transactions I
 * Product Price at a Given Date
 
+### Window Functions & Ranking
+
+* Department Top Three Salaries
+* Exchange Seats
+* Restaurant Growth
+
 ### Intermediate SQL
 
 * Game Play Analysis IV
@@ -163,52 +179,8 @@ This repository contains my solutions to SQL problems from LeetCode. The goal is
 * Product Sales Analysis III
 * Last Person to Fit in the Bus
 * Consecutive Numbers
-
----
-
-## Repository Structure
-
-```text
-SQL-50/
-│
-├── 1045 Customers Who Bought All Products.sql
-├── 1068 Product Sales Analysis I.sql
-├── 1070 Product Sales Analysis III.sql
-├── 1075 Project Employees I.sql
-├── 1141 User Activity for the Past 30 Days I.sql
-├── 1148 Article Views I.sql
-├── 1164 Product Price at a Given Date.sql
-├── 1174 Immediate Food Delivery II.sql
-├── 1193 Monthly Transactions I.sql
-├── 1204 Last Person to Fit in the Bus.sql
-├── 1211 Queries Quality and Percentage.sql
-├── 1251 Average Selling Price.sql
-├── 1280 Students and Examinations.sql
-├── 1378 Replace Employee ID With The Unique Identifier.sql
-├── 1581 Customer Who Visited but Did Not Make Any Transactions.sql
-├── 1633 Percentage of Users Attended a Contest.sql
-├── 1661 Average Time of Process per Machine.sql
-├── 1683 Invalid Tweets.sql
-├── 1729 Find Followers Count.sql
-├── 1731 The Number of Employees Which Report to Each Employee.sql
-├── 1757 Recyclable and Low Fat Products.sql
-├── 1789 Primary Department for Each Employee.sql
-├── 180 Consecutive Numbers.sql
-├── 1907 Count Salary Categories.sql
-├── 1934 Confirmation Rate.sql
-├── 197 Rising Temperature.sql
-├── 2356 Number of Unique Subjects Taught by Each Teacher.sql
-├── 550 Game Play Analysis IV.sql
-├── 570 Managers with at Least 5 Direct Reports.sql
-├── 577 Employee Bonus.sql
-├── 584 Find Customer Referee.sql
-├── 596 Classes With at Least 5 Students.sql
-├── 598 Big Countries.sql
-├── 610 Triangle Judgement.sql
-├── 619 Biggest Single Number.sql
-├── 620 Not Boring Movies.sql
-└── README.md
-```
+* Friend Requests II: Who Has the Most Friends
+* Investments in 2016
 
 ---
 
@@ -216,20 +188,20 @@ SQL-50/
 
 ### Current Focus
 
-* Complete the LeetCode SQL 50 Study Plan
-* Strengthen aggregation and join patterns
-* Improve query optimization skills
+* Complete LeetCode SQL 50
+* Master Window Functions
+* Strengthen Join and Aggregation Patterns
+* Improve Query Optimization Skills
 
 ### Next Topics
 
-* Window Functions
-* ROW_NUMBER()
-* RANK()
-* DENSE_RANK()
-* LEAD() and LAG()
-* Advanced CTEs
-* Recursive Queries
-* Query Performance Optimization
+* Advanced Window Functions
+* Recursive CTEs
+* Query Execution Plans
+* Indexing Concepts
+* Database Design Fundamentals
+* Stored Procedures
+* Views and Materialized Views
 
 ---
 
@@ -238,5 +210,15 @@ SQL-50/
 Consistent SQL practice is helping me develop strong database fundamentals, analytical thinking, and interview-ready problem-solving skills.
 
 This repository documents my progress as I work toward mastering SQL for Data Analytics, Data Science, Machine Learning, and Software Engineering roles.
+
+### Milestones
+
+✅ Completed 40 SQL Problems
+
+✅ Solved Easy, Medium, and Hard Questions
+
+✅ Practiced Joins, Aggregations, CTEs, and Window Functions
+
+🚀 Next Goal: Complete LeetCode SQL 50 and Master Advanced SQL
 
 ⭐ If you find this repository useful, feel free to star it and follow my learning journey!
